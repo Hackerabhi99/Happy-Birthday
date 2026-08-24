@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090414">
+  <title>For You ♥ | A Magical Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="not-loaded">
+
+  #Audio-Song
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("click", function () {
+        const music = document.getElementById("bgMusic");
+        music.play();
+    }, { once: true });
+</script>
+
+
+
+
+
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="aurora"></div>
+  <div class="moon"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <main class="scene">
+    <section class="message">
+      <p class="eyebrow">A little universe made just for you</p>
+      <h1>Happy Birthday <span id="name">My Love</span> <span class="sparkle"></span></h1>
+      <p class="subtitle">May your smile always be brighter than the stars.</p>
+    </section>
+
+    <section class="garden-stage" aria-label="Animated birthday garden">
+      <!-- Existing flower garden is preserved and enhanced -->
+      <div class="flowers">
+        <div class="flower flower--1">
+          <div class="flower__leafs flower__leafs--1">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div>
+            <div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+            <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div>
+            <div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div>
+            <div class="flower__line__leaf flower__line__leaf--4"></div>
+            <div class="flower__line__leaf flower__line__leaf--5"></div>
+            <div class="flower__line__leaf flower__line__leaf--6"></div>
+          </div>
+        </div>
+
+        <div class="flower flower--2">
+          <div class="flower__leafs flower__leafs--2">
+            <div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+            <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div>
+          </div>
+        </div>
+
+        <div class="flower flower--3">
+          <div class="flower__leafs flower__leafs--3">
+            <div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div>
+            <div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div>
+            <div class="flower__white-circle"></div>
+            <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div>
+            <div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div>
+            <div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div>
+            <div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+          </div>
+          <div class="flower__line">
+            <div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div>
+            <div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Romantic floating hearts -->
+      <div class="heart-field" aria-hidden="true">
+        <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+        <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+      </div>
+
+      <!-- 3D-style birthday cake -->
+      <div class="cake-wrap">
+        <button class="cake" id="cake" aria-label="Birthday cake. Click to blow out the candles.">
+          <div class="plate"></div>
+          <div class="cake-shadow"></div>
+          <div class="tier tier-bottom"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="tier tier-middle"><i></i><i></i><i></i><i></i></div>
+          <div class="tier tier-top"><i></i><i></i><i></i></div>
+          <div class="cream cream-1"></div>
+          <div class="cream cream-2"></div>
+
+          <div class="candles">
+            <span class="candle c1"><b></b></span>
+            <span class="candle c2"><b></b></span>
+            <span class="candle c3"><b></b></span>
+            <span class="candle c4"><b></b></span>
+            <span class="candle c5"><b></b></span>
+          </div>
+          <span class="cake-badge">Make a wish ✨</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="wish">
+      <span>✦</span>
+      <p>Close your eyes, make a wish,<br>and let this little moment belong to you.</p>
+      <span>✦</span>
+    </div>
+
+    <button class="wish-btn" id="wishBtn">Open your birthday surprise ♥</button>
+    <p class="hint">Tip: click the cake to blow out the candles.</p>
+  </main>
+
+
+
+  
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" id="close" aria-label="Close">×</button>
+      <div class="modal-heart">♥</div>
+      <h2>For <span id="modalName"></span>😊</h2>
+      <p>
+       <b> There is nothing special, You have to make your life speacial,<br>
+         By keep growing and keep learning from your mistakes.</b><br>
+        জীবন নিজে থেকে বিশেষ হয়ে ওঠে না, আমাদেরই প্রতিদিনের চেষ্টা, </br>
+        শেখা আর ছোট ছোট পরিবর্তনের মাধ্যমে জীবনকে বিশেষ করে তুলতে হয়। </br>
+         তোমার নতুন বছরটা হোক নতুন কিছু শেখা, নিজের ভুল থেকে শিক্ষা নেওয়া </br>
+          এবং প্রতিদিন আরও ভালো মানুষ হয়ে ওঠার এক সুন্দর যাত্রা। শুভ জন্মদিন! 🎂✨ </br>
+        <b>On your special day, I hope life gives you every beautiful thing
+        your heart quietly wishes for. Keep smiling, keep dreaming, and
+        never forget how wonderfully special you are.</b>
+      </p>
+      <strong>Happy Birthday, with all my heart. ♥</strong>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+
+</html>
